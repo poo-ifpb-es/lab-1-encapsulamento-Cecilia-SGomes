@@ -1,4 +1,4 @@
-public class Linha  {
+public class Linha {
     public Ponto inicio;
     public Ponto fim;
 
@@ -24,8 +24,10 @@ public class Linha  {
     }
     
     public double getComprimento(){
-        double comprimento = fim - inicio;
-        
+        double x = (fim.getX()-inicio.getX());
+        double y = (fim.getY()-inicio.getY());
+        double comprimento = Math.sqrt(Math.pow(x,2) + (Math.pow(y, 2)));
+    
         return comprimento;
     }
 
