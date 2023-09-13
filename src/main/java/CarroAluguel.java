@@ -1,11 +1,9 @@
 public class CarroAluguel extends Exception {
     public float valorPorKm;
-  
     public int distancia;
     public boolean sinistro;
     public boolean disponivel;
     public float debito;
-    public float valor;
 
     public CarroAluguel(float valorPorKm) {
         this.valorPorKm = valorPorKm;
@@ -13,7 +11,6 @@ public class CarroAluguel extends Exception {
         this.sinistro= false;
         this.disponivel = true;
         this.debito = 0;
-
     }
     public float getValorPorKm() {
         return valorPorKm;
