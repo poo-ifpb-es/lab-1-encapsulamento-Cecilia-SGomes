@@ -61,11 +61,9 @@ public class CarroAluguel extends Exception {
         if(disponivel){
             throw new CarroDisponivelException();
         }
-
         if(sinistro){
           debito = debito+0.6f;
         }
-
         disponivel = true;
         sinistro = true;
         }
